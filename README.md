@@ -16,12 +16,17 @@ In this project we will create a react application that solves computer science 
 
 <img src="https://github.com/DevMountain/react-1-afternoon/blob/solution/readme/1-2.png" />
 
+
 ## Setup
 
 * `Fork` and `clone` this repository.
 * `cd` into the project directory.
 * Run `npm install`.
 * After `npm install` has finished run `npm start`.
+
+
+
+
 
 ## Step 1
 
@@ -94,6 +99,8 @@ export default TopicBrowser;
 
 </details>
 
+
+
 <details>
 
 <summary> <code> TopicBrowser.js ( export on same line ) </code> </summary>
@@ -114,6 +121,8 @@ export default class TopicBrowser extends Component {
 
 <br />
 
+
+
 Both ways are completely fine, however I'll be using the same line `export`. Now that our `export` is setup we can `import` it in `App.js` and `render` it. We can `import` components with the following format: `import ComponentNameHere from '/file_path_to_component_here'`. Therefore our `import` in `src/components/App.js` would look like:
 
 ```js
@@ -121,6 +130,7 @@ import TopicBrowser from './components/TopicBrowser/TopicBrowser'
 ```
 
 The `import` is clever enough to add on the `.js` extension for us. Now that `src/components/App.js` has `TopicBrowser` imported we can `render` it the same way rendered our `<p>` element in `TopicBrowser`. The only differencing being to `render` components you wrap the component name in `< />`. Our `src/components/App.js` should now look like:
+
 
 ```js
 import React, { Component } from 'react';
@@ -139,6 +149,9 @@ export default App;
 ```
 
 </details>
+
+
+
 
 ## Solution
 
@@ -164,6 +177,10 @@ export default App;
 
 </details>
 
+
+
+
+
 <details>
 
 <summary> <code> TopicBrowser.js </code> </summary>
@@ -183,6 +200,12 @@ export default class TopicBrowser extends Component {
 </details>
 
 <img src="https://github.com/DevMountain/react-1-afternoon/blob/solution/readme/2-2.png" />
+
+
+
+
+
+
 
 ## Step 2
 
@@ -245,6 +268,10 @@ export default class FilterObject extends Component {
 
 </details>
 
+
+
+
+
 <details>
 
 <summary> <code> FilterString.js </code> </summary>
@@ -263,6 +290,11 @@ export default class FilterString extends Component {
 
 </details>
 
+
+
+
+
+
 <details>
 
 <summary> <code> Palindrome.js </code> </summary>
@@ -280,6 +312,15 @@ export default class Palindrome extends Component {
 ```
 
 </details>
+
+
+
+
+
+
+
+
+
 
 <details>
 
@@ -300,6 +341,12 @@ export default class Sum extends Component {
 </details>
 
 <br />
+
+
+
+
+
+
 
 After you applied the same concepts to the 4 other javascript files in the Topics folder, we'll then import them into `TopicBrowser.js`. Just like how we imported `TopicBrowser` into `App.js` we'll do:
 
@@ -476,6 +523,14 @@ export default class Sum extends Component {
 
 <img src="https://github.com/DevMountain/react-1-afternoon/blob/solution/readme/3.png" />
 
+
+
+
+
+
+
+
+
 ## Step 3
 
 ### Summary
@@ -483,6 +538,9 @@ export default class Sum extends Component {
 In the following steps it's important to understand that there is more than one way to solve a toy problem; if your solution doesn't match mine that's okay. Also, since the following 5 components are very similiar in their structure, only step 3's detailed instructions go into great detail. The other steps after that won't go into much detail.
 
 In this step, we'll start with the first topic: `EvenAndOdd`.
+
+
+
 
 ### Instructions
 
@@ -497,8 +555,10 @@ In this step, we'll start with the first topic: `EvenAndOdd`.
   * `div` - className="puzzleBox evenAndOddPB"
   * `input` - className="inputLine"
   * `button` - className="confirmationButton"
-  * Both `span`s - className="resultsBox"
+  * Both `span`s - className="resultsBox"<>
 * Assign the `h4` element the value of `"Evens and Odds"`.
+
+
 * Create a `constructor` method that creates an initial state:
   * `evenArray` - This should default to an empty array.
   * `oddArray` - This should default to an empty array.
@@ -509,6 +569,9 @@ In this step, we'll start with the first topic: `EvenAndOdd`.
   * This method should update the value of `evenArray` and `oddArray` on state.
 * Assign one `span` element to display the value of `evenArray`.
 * Assign the other `span` element to display the value of `oddArray`.
+
+
+
 
 <details>
 
@@ -622,6 +685,11 @@ How you solve the toy problem is up to you, if you can't figure it out check out
 
 </details>
 
+
+
+
+
+
 ### Solution
 
 <details>
@@ -682,6 +750,13 @@ export default class EvenAndOdd extends Component {
 <br />
 
 <img src="https://github.com/DevMountain/react-1-afternoon/blob/solution/readme/1g.gif" />
+
+
+
+
+
+
+
 
 ## Step 4
 
@@ -828,6 +903,11 @@ How you solve the toy problem is up to you, if you can't figure it out check out
 
 </details>
 
+
+
+
+
+
 ### Solution
 
 <details>
@@ -901,6 +981,16 @@ export default class FilterObject extends Component {
 <br />
 
 <img src="https://github.com/DevMountain/react-1-afternoon/blob/solution/readme/2g.gif" />
+
+
+
+
+
+
+
+
+
+
 
 ## Step 5
 
@@ -1088,6 +1178,12 @@ export default class FilterString extends Component {
 <br />
 
 <img src="https://github.com/DevMountain/react-1-afternoon/blob/solution/readme/3g.gif" />
+
+
+
+
+
+
 
 ## Step 6
 
@@ -1405,6 +1501,7 @@ How you solve the toy problem is up to you, if you can't figure it out check out
 
 <summary> <code> Sum.js </code> </summary>
 
+
 ```js
 import React, { Component } from 'react';
 
@@ -1451,6 +1548,8 @@ export default class Sum extends Component {
 <br />
 
 <img src="https://github.com/DevMountain/react-1-afternoon/blob/solution/readme/5g.gif" />
+
+
 
 ## Black Diamond
 
